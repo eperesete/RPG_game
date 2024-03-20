@@ -29,7 +29,7 @@ let nowork_humans = 0 // кол-во не работающих людей
 let forest_humans = 4 // кол-во людей работающих в лесу
 works = [nowork_humans, forest_humans]
 
-let logs = [] // логи (новые строки логов добавляются в начало списка)
+let logs = [] // логи (новые строки логов добавляются в конец списка)
 let tiks = 0 // тики
 let tiks_long = 10
 
@@ -40,6 +40,7 @@ function updateWindow(){ // функция обновления экрана
 function time() {
     tiks += 1
     work_humans()
+    console.log(logs)
     setTimeout(function(){
         time()
     }, tiks_long * 1000)
@@ -52,6 +53,7 @@ function work_humans() {
 
     if (humans > fried_meat){
         let dead_humans = humans - fried_meat
+        let all_dead_humans = dead_humans
         humans -= dead_humans
         for (let i = 0; i < works.length; i += 1){
             if (works[i] > dead_humans){
@@ -63,13 +65,13 @@ function work_humans() {
                 works[i] = 0
             }
         }
-        logs.add(0,`${dead_humans} человек погибло :(`)
+        logs.push(`${all_dead_humans} человек погибло :(`)
     }
 
     if ((fried_meat > humans*2) && (humans < max_humans)){
         humans += 1
         nowork_humans += 1
-        logs.add(0,"у вас появился новый житель!")
+        logs.push("у вас появился новый житель!")
     }
     fried_meat -= humans
 
@@ -79,11 +81,11 @@ function work_humans() {
 go_forest.addEventListener('click', function() {
     if (Math.random() <= 0.3){
         wood += 1
-        logs.add(0,"Вы нашли одно дерево!");
+        logs.push("Вы нашли одно дерево!");
     }
     if (Math.random() <= 0.2){
         meat += 1
-        logs.add(0,"Вы нашли одно мясо!");
+        logs.push("Вы нашли одно мясо!");
     }
 })
 
@@ -94,7 +96,7 @@ craft_hous.addEventListener('click', function() {
         wood -= 100
         houses += 1
         max_humans += 4
-        logs.add(0,"Вы построиили ещё один дом!");
+        logs.push("Вы построиили ещё один дом!");
     }
 })
 
@@ -103,7 +105,7 @@ craft_fried_meat.addEventListener('click', function() {
         wood -= 2
         meat -= 1
         fried_meat += 1
-        logs.add(0,"Вы приготовили ещё одно жаренное мясо!");
+        logs.push("Вы приготовили ещё одно жаренное мясо!");
     }
 })
 
@@ -114,14 +116,14 @@ go_human_work_in_forest.addEventListener('click', function() {
         nowork_humans -= 1
         forest_humans += 1
     }
-    logs.add(0,"Ещё один житель теперь работает в лесу!");
+    logs.push("Ещё один житель теперь работает в лесу!");
 })
 quit_human_work_in_forest.addEventListener('click', function() {
     if (forest_humans > 0){
         forest_humans -= 1
         nowork_humans += 1
     }
-    logs.add(0,"Ещё один житель теперь безработынй...");
+    logs.push("Ещё один житель теперь безработынй...");
 })
 
 
