@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <style>
+    body {
+      background-color: #202020
+    }
+    </style>
+    <div class="buttons_zones">
+      <p><input class="btn_go_village" type="button" value="Деревня    "></p>
+      <p><input class="btn_go_inventory" type="button" value="Инвентарь "></p>
+      <p><input class="btn_go_market" type="button" value="Рынок         "></p>
+      <p><input class="btn_go_environment" type="button" value="Окружение "></p>
+    </div>
+    <div class="text"><h1>Логи</h1>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+      <p class="mode"><span class="logs">...</span></p>
+    </div>
+    <div class="village">
+      <div><h1>Деревня <span class="vilage_valume"></span></h1>
+        <p>жителей не занято: <span class="non_work_humans"></span></p>
+        <p>дома: <span class="houses"></span></p>
+        <p>добывают ресурсы в лесу: <span class="forest_humans"></span>  <input class="go_human_work_in_forest" type="button" value="+"><input class="quit_human_work_in_forest" type="button" value="-"></p>
+        <p class="cook_humans_menu">повара: <span class="cook_humans"></span>  <input class="go_human_work_cook" type="button" value="+"><input class="quit_human_work_cook" type="button" value="-"></p>
+      </div>
+    </div>
+    <div class="inventory">
+      <div><h1>Инвентарь <span class="slots"></span></h1>
+        <p>здоровье: <span class="health"></span></p>
+        <p>жаренное мясо: <span class="fried_meat_inventory"></span>  <input class="input_fried_meat" type="button" value="+"><input class="output_fried_meat" type="button" value="-"></p>
+        <p>деревянные мечи: <span class="wood_swords_inventory"></span>  <input class="input_wood_sword" type="button" value="+"><input class="output_wood_sword" type="button" value="-"></p>
+        <h1>Крафт</h1>
+        <p><input class="craft_hous" type="button" value="дом(100 дерева)"></p>
+        <p><input class="craft_fried_meat" type="button" value="жаренное мясо(1 мясо, 2 дерева)"></p>
+        <p><input class="craft_wood_sword" type="button" value="деревянный меч (50 дерева)"></p>
+      </div>
+      <div class="auxiliary_class">
+        <h1>Склад:</h1>
+        <p>мясо: <span class="meat"></span></p>
+        <p>жареное мясо: <span class="fried_meat"></span></p>
+        <p>дерево: <span class="wood"></span></p>
+        <p>деревянные мечи: <span class="wood_swords"></span></p>
+      </div>
+    </div>
+    <div class="market">
+      <div><h1>Рынок:</h1>
+        <p class="cookbook_one">кулинарная книга том 1: 50 мяса <input class="buy_cookbook_one" type="button" value="купить"></p>
+        <p class="cookbook_two">кулинарная книга том 2: 100 мяса <input class="buy_cookbook_two" type="button" value="купить"></p>
+        <p class="cookbook_three">кулинарная книга том 3: 100 жаряного мяса <input class="buy_cookbook_three" type="button" value="купить"></p>
+        <p class="foresting_one">лесничество том 1: 50 дерева <input class="buy_foresting_one" type="button" value="купить"></p>
+        <p class="foresting_two">лесничество том 2: 100 дерева <input class="buy_foresting_two" type="button" value="купить"></p>
+        <p class="foresting_three">лесничество том 3: 200 дерева <input class="buy_foresting_three" type="button" value="купить"></p>
+      </div>
+    </div>
+    </div>
+    <div class="environment">
+      <div><h1>Окружение</h1>
+        <p><input class="go_forest" type="button" value="Исследовать лес"></p>
+        <p><input class="go_cave" type="button" value="Исследовать пещеру"></p>
+    </div>
+    </div>
+    <div class="battle_screen">
+        <div><h1>Битва</h1>
+          <p>враг: <span class="bad_name"></span></p>
+          <p>хп: <span class="bad_hp"></span></p>
+          <p>оружие: <span class="bad_name_weapon"></span></p>
+      </div>
+    <div><h1 class="vs">VS</h1></div>
+      <div class="you">
+          <p>вы</p>
+          <p>хп: <span class="hero_hp"></span></p>
+          <p>жаренное мясо: <span class="batle_fried_meat_inventory"></span> </p>
+          <p>деревянные мечи: <span class="batle_wood_swords_inventory"></span></p>
+          <p><input class="eat_fried_meat" type="button" value="съесть жареное мясо"></p>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>

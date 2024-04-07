@@ -1,0 +1,166 @@
+.text {
+    color:aliceblue;
+}
+
+.mode {
+    padding: 0,4%;
+}
+
+.village{
+    display: flex;
+    margin-top: -0px;
+    color:aliceblue;
+    margin-left: 370px;
+    margin-top: -895px
+}
+.inventory{
+    display: none;
+    margin-top: -0px;
+    color:aliceblue;
+    margin-left: 370px;
+    margin-top: -895px
+}
+.market{
+    display: none;
+    margin-top: -0px;
+    color:aliceblue;
+    margin-left: 370px;
+    margin-top: -895px
+}
+.environment{
+    display: none;
+    margin-top: -0px;
+    color:aliceblue;
+    margin-left: 370px;
+    margin-top: -895px
+}
+
+.battle_screen{
+    display: none;
+    margin-top: -0px;
+    color:aliceblue;
+    margin-left: 370px;
+    margin-top: -895px
+}
+
+.you {
+    margin-left:60px;
+    margin-top: 60px;
+}
+
+.vs {
+    margin-left:50px;
+    margin-top: 100px;
+}
+.auxiliary_class {
+    margin-left:50px;
+}
+
+.cook_humans_menu{
+    display: none;
+}
+
+.cookbook_two{
+    display: none;
+}
+.cookbook_three{
+    display: none;
+}
+.foresting_two{
+    display: none;
+}
+.foresting_three{
+    display: none;
+}
+
+.go_cave{
+    display: none;
+}
+
+.text2 {
+
+    color:aliceblue;
+    margin-left:200px;
+    margin-top: -895px
+}
+
+.text3 {
+    color:aliceblue;
+    position: absolute;
+    margin-left:500px;
+    margin-top: -270px
+}
+
+.text4 {
+    color:aliceblue;
+    margin-left:400px;
+    margin-top: -0px
+}
+
+.text5 {
+    color:aliceblue;
+    margin-left:600px;
+    margin-top: -305px
+}
+
+.buttons {
+    color:aliceblue;
+    margin-left:500px;
+    margin-top: -70px
+}
+
+.buttons2 {
+    color:aliceblue;
+    margin-left:500px;
+    margin-top: -200px
+}
+
+.buttons3 {
+    color:aliceblue;
+    margin-left:300px;
+    margin-top: -235px
+}
+
+.buttons_zones {
+    color:aliceblue;
+    position: absolute;
+    margin-left:900px;
+    margin-top: 10px;
+}
+
+.buttons_zones2 {
+    color:aliceblue;
+    margin-left:830px;
+    margin-top: -130px
+}
+
+.buttons_zones3 {
+    color:aliceblue;
+    margin-left:830px;
+    margin-top: -200px
+}
+
+.buttons_zones5 {
+    color:aliceblue;
+    margin-left:830px;
+    margin-top: -100px
+}
+
+.resurses {
+    color:aliceblue;
+    position: absolute;
+    margin-left:630px;
+    margin-top: -215px
+}
+
+.resurses5 {
+    color:aliceblue;
+    margin-left:630px;
+    margin-top: -215px
+}
+
+.shop_buttons {
+    color:aliceblue;
+    margin-left:500px;
+    margin-top: -110px
+}
