@@ -209,7 +209,7 @@ function battle() {
             }
             village.style.display = 'flex'
             buttons_zones.style.display = 'block'
-            if ((Math.random() <= 0.01) && (open_locations < 2)){
+            if ((Math.random() <= 0.05) && (open_locations < 2)){
                 go_cave.style.display = 'flex'
                 open_locations = 2
                 logs.push("Вы нашли карту ведущую в пещеру!")
